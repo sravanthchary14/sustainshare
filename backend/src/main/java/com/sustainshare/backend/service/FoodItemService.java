@@ -1,0 +1,47 @@
+package com.sustainshare.backend.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sustainshare.backend.model.DonationLog;
+import com.sustainshare.backend.model.FoodItem;
+import com.sustainshare.backend.repository.DonationLogRepository;
+import com.sustainshare.backend.repository.FoodItemRepository;
+
+@Service
+public class FoodItemService {
+
+    @Autowired
+    private FoodItemRepository foodItemRepository;
+
+    @Autowired
+    private DonationLogRepository donationLogRepository;
+
+    public FoodItem addFood(FoodItem item) {
+        return foodItemRepository.save(item);
+    }
+
+    public List<FoodItem> getAllFoodItems() {
+        return foodItemRepository.findAll();
+    }
+
+    public List<FoodItem> getAvailableFoodItems() {
+        return foodItemRepository.findAllAvailable();
+    }
+
+    public FoodItem getFoodById(Long id) {
+        return foodItemRepository.findById(id).orElse(null);
+    }
+
+    public void deleteFoodItem(Long id) {
+        // First delete all related donation logs
+        List<DonationLog> relatedLogs = donationLogRepository.findAllByFoodItem_Id(id);
+        if (!relatedLogs.isEmpty()) {
+            donationLogRepository.deleteAll(relatedLogs);
+        }
+        // Then delete the food item
+        foodItemRepository.deleteById(id);
+    }
+}
