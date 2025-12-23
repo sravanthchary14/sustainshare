@@ -1,0 +1,427 @@
+/* Global Styles */
+
+/* Hero Design Enhancements */
+.hero-label {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.highlight-text {
+  background: linear-gradient(to right, #facc15, #10b981, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+}
+
+.home-page {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+  background: linear-gradient(to right, #fef9f5, #f9fbff);
+  line-height: 1.6;
+}
+
+/* About SustainShare section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-section .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.about-section .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-section .card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-section .card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-section .card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Header/Navbar - Added new header styles */
+.header {
+  background-color: #111827;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, #fef9f5, #f9fbff);
+  padding: 0rem 2rem 2rem; /* Added padding-top for header */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #111827; /* Dark blue-black */
+}
+
+.hero-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #4b5563; /* Gray */
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #4b5563; /* Gray */
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button, .secondary-button {
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button {
+  background-color: #e25c2e; /* Vibrant orange */
+  color: white;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: #d55628; /* Darker orange */
+}
+
+.secondary-button {
+  background-color: white;
+  color: #111827; /* Dark blue-black */
+  border: 2px solid #111827;
+}
+
+.secondary-button:hover {
+  background-color: #f8fafc; /* Very light gray */
+}
+/* Purple Buttons */
+button {
+    background-color: #6c5ce7; /* Purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a4cc7; /* Darker purple on hover */
+}
+
+/* About Cards */
+.about-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+
+/* Stats Section */
+.stats-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #ffffff; /* Pure white */
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #111827; /* Dark blue-black */
+}
+
+.stats-section p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #64748b; /* Medium gray */
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0; /* Light gray border */
+}
+
+.stat-card h3 {
+  font-size: 2.25rem;
+  color: #e25c2e; /* Vibrant orange */
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  color: #4b5563; /* Gray */
+  margin: 0;
+}
+
+/* Process Section */
+.process-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #fef9f5, #f9fbff);
+}
+
+.section-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.process-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #111827; /* Dark blue-black */
+}
+
+.process-section p {
+  font-size: 1.1rem;
+  color: #64748b; /* Medium gray */
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0; /* Light gray border */
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: #e25c2e; /* Vibrant orange */
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step-icon {
+  font-size: 2rem;
+  color: #e25c2e; /* Vibrant orange */
+  margin-bottom: 1rem;
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #111827; /* Dark blue-black */
+}
+
+.step-content p {
+  font-size: 1rem;
+  color: #64748b; /* Medium gray */
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #e25c2e; /* Vibrant orange */
+  color: white;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.cta-actions .primary-button {
+  background-color: white;
+  color: #e25c2e; /* Vibrant orange */
+}
+
+.cta-actions .primary-button:hover {
+  background-color: #f8fafc; /* Very light gray */
+}
+
+.cta-actions .secondary-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-actions .secondary-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Section */
+.footer {
+  background-color: #111827; /* Dark blue-black */
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.25rem;
+  }
+  
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-actions, .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
